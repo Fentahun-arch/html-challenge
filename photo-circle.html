@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animated Circle Text Logo</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
+    <div class="circle">
+        <div class="logo"></div>
+        <div class="logo"></div>
+        <div class="text">
+    <p>My name is Fentahun Ayana in Addis Ababa Science and Technology-AASTU - </p>
+        </div>
+    </div>
+    <script class="new">
+        const text=document.querySelector('.text p');
+        text.innerHTML=text.innerText.split("").map((char,i)=><span class="output">${char}</span>).join("");
+        </script>
+</body>
+</html>
