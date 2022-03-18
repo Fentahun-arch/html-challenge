@@ -10,12 +10,15 @@
         <div class="logo"></div>
         <div class="logo"></div>
         <div class="text">
-    <p>My name is Fentahun Ayana in Addis Ababa Science and Technology-AASTU - </p>
+    <p>My name is Fentahun Ayana in Addis Ababa -</p>
         </div>
     </div>
     <script class="new">
         const text=document.querySelector('.text p');
-        text.innerHTML=text.innerText.split("").map((char,i)=><span class="output">${char}</span>).join("");
+        text.innerHTML=text.innerText.split("").map(
+            (char,i)=>
+    `<span style="transform:rotate(${i * 8.2}deg)">${char}</span>`        
+        ).join("");
         </script>
 </body>
 </html>
